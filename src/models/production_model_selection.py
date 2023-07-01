@@ -22,7 +22,7 @@ def log_production_model(config_path):
         mv = dict(mv)
 
         if mv["run_id"] == max_accuracy_run_id:
-            current_version = mv["version1"]
+            current_version = mv["version"]
             logged_model = mv["source"]
             pprint(mv, indent=4)
             client.transition_model_version_stage(
