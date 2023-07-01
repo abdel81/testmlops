@@ -3,4 +3,3 @@ outs:
   size: 391872
   path: train.csv
 
-  hash: md5
