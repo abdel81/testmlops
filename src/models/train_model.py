@@ -43,7 +43,7 @@ def accuracymeasures(y_test,predictions,avg_method):
 
 def get_feat_and_target(df,target):
     """
-    Get features and target variables seperately from given dataframe and target 
+    Get features and target variables separately from given dataframe and target 
     input: dataframe and target column
     output: two dataframes for x and y 
     """
