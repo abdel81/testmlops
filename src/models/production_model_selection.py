@@ -40,7 +40,6 @@ def log_production_model(config_path):  # sourcery skip: hoist-similar-statement
 
     loaded_model = mlflow.pyfunc.load_model(logged_model)
     joblib.dump(loaded_model, model_dir)
-
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
