@@ -4,7 +4,7 @@ setup(
     name='src',
     packages=find_packages(),
     version='0.1.0',
-    description='test mlops project',
-    author='abdellatif',
+    description='End to End Machine learning pipeline with MLOps tools',
+    author='shanaka_chathuranga',
     license='MIT',
 )

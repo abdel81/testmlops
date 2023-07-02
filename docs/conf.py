@@ -186,7 +186,7 @@ latex_documents = [
     ('index',
      'churn_model.tex',
      u'churn_model Documentation',
-     u"abdellatif", 'manual'),
+     u"shanaka_chathuranga", 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -216,7 +216,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'churn_model', u'churn_model Documentation',
-     [u"abdellatif"], 1)
+     [u"shanaka_chathuranga"], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -230,8 +230,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'churn_model', u'churn_model Documentation',
-     u"abdellatif", 'churn_model',
-     'test mlops project', 'Miscellaneous'),
+     u"shanaka_chathuranga", 'churn_model',
+     'End to End Machine learning pipeline with MLOps tools', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

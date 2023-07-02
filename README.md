@@ -1,7 +1,7 @@
 churn_model
 ==============================
 
-test mlops project
+End to End Machine learning pipeline with MLOps tools
 
 Project Organization
 ------------

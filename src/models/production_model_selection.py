@@ -5,7 +5,7 @@ from pprint import pprint
 from train_model import read_params
 from mlflow.tracking import MlflowClient
 
-def log_production_model(config_path):  #sourcery skip: hoist-similar-statement-from-if, hoist-statement-from-if
+def log_production_model(config_path):
     config = read_params(config_path)
     mlflow_config = config["mlflow_config"] 
     model_name = mlflow_config["registered_model_name"]
@@ -40,6 +40,7 @@ def log_production_model(config_path):  #sourcery skip: hoist-similar-statement-
 
     loaded_model = mlflow.pyfunc.load_model(logged_model)
     joblib.dump(loaded_model, model_dir)
+
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
