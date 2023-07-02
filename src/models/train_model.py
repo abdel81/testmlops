@@ -84,7 +84,6 @@ def train_and_evaluate(config_path):
         mlflow.log_metric("precision", precision)
         mlflow.log_metric("recall", recall)
         mlflow.log_metric("f1_score", f1score)
-       
         tracking_url_type_store = urlparse(mlflow.get_artifact_uri()).scheme
 
         if tracking_url_type_store != "file":
@@ -94,7 +93,6 @@ def train_and_evaluate(config_path):
                 registered_model_name=mlflow_config["registered_model_name"])
         else:
             mlflow.sklearn.load_model(model, "model")
- 
 if __name__=="__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
